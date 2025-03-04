@@ -8,6 +8,8 @@ import {
   Search,
   CalendarDays,
   Settings,
+  Phone,
+  UserRound
 } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useRouter } from "next/navigation";
@@ -33,10 +35,10 @@ const Sidebar = (props: Props) => {
         </Link>
 
         <Link
-          href="/dashboard"
+          href="/home/call"
           className="p-2 rounded-md hover:bg-indigo-200 transition-colors"
         >
-          <Grid3X3 className="h-6 w-6 text-gray-700" />
+          <UserRound className="h-6 w-6 text-gray-700" />
         </Link>
 
         <Link
@@ -44,13 +46,6 @@ const Sidebar = (props: Props) => {
           className="p-2 rounded-md hover:bg-indigo-200 transition-colors"
         >
           <Search className="h-6 w-6 text-gray-700" />
-        </Link>
-
-        <Link
-          href="/calendar"
-          className="p-2 rounded-md hover:bg-indigo-200 transition-colors"
-        >
-          <CalendarDays className="h-6 w-6 text-gray-700" />
         </Link>
       </nav>
 
@@ -63,7 +58,7 @@ const Sidebar = (props: Props) => {
           <Settings className="h-6 w-6 text-gray-700" />
         </Link>
         <Link
-          href="/settings"
+          href="/home/profile"
           className="p-2 rounded-md hover:bg-indigo-200 transition-colors"
         >
           <Avatar className="size-7">

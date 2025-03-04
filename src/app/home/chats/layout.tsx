@@ -16,7 +16,7 @@ export default function ChatLayout({
   return (
     <div className="flex h-full">
       {/* Chat list sidebar - always visible */}
-      <div className="w-72 border-r bg-gray-50">
+      <div className="w-1/4 border-r bg-gray-50">
         <ChatsList />
       </div>
       
