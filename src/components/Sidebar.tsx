@@ -4,9 +4,7 @@ import Link from "next/link";
 import {
   Home,
   MessageSquare,
-  Grid3X3,
   Search,
-  CalendarDays,
   Settings,
   Phone,
   UserRound
@@ -38,14 +36,14 @@ const Sidebar = (props: Props) => {
           href="/home/call"
           className="p-2 rounded-md hover:bg-indigo-200 transition-colors"
         >
-          <UserRound className="h-6 w-6 text-gray-700" />
+          <Phone  className="h-6 w-6 text-gray-700" />
         </Link>
 
         <Link
           href="/search"
           className="p-2 rounded-md hover:bg-indigo-200 transition-colors"
         >
-          <Search className="h-6 w-6 text-gray-700" />
+          <UserRound className="h-6 w-6 text-gray-700" />
         </Link>
       </nav>
 
